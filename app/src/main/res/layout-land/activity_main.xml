@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:gravity="bottom|start"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt"
+        android:textColor="@drawable/black"
+        
+        android:id="@+id/labelofprojectname"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/editproject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labelofprojectname"
+        android:layout_alignBaseline="@+id/labelofprojectname"
+        android:layout_alignBottom="@+id/labelofprojectname"
+
+        android:textColor="@drawable/black"
+        android:autoText="false"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详细："
+        android:textColor="@drawable/black"
+        android:id="@+id/labelofdetail" />
+
+    <EditText
+        android:id="@+id/editdetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="键值："
+        android:textColor="@drawable/black"
+        android:id="@+id/idlabel" />
+
+    <EditText
+        android:id="@+id/editprojectid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/black"
+        android:inputType="none" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white" />
+
+
+</LinearLayout>
