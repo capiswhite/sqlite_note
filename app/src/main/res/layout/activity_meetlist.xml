@@ -130,6 +130,8 @@
         android:textSize="@dimen/abc_text_size_title_material"
         android:textStyle="bold|italic"
         android:maxWidth="@dimen/abc_action_bar_stacked_tab_max_width"
-        android:maxLines="1" />
+        android:maxLines="1"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
 
 </RelativeLayout>

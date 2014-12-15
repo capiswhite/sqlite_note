@@ -28,6 +28,9 @@
         <activity
             android:name="hitcube.sqlite.notelist">
         </activity>
+        <activity
+            android:name="hitcube.sqlite.notedetail">
+        </activity>
     </application>
 
 </manifest>

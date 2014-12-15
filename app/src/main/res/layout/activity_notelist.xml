@@ -57,29 +57,14 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="笔记标签："
-        android:id="@+id/projectnamelabel"
-        android:layout_alignBottom="@+id/editnote"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="@dimen/abc_text_size_medium_material"
-        android:layout_alignTop="@+id/editnote"
-        android:textIsSelectable="false"
-        android:gravity="center_vertical" />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editnote"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/projectnamelabel"
-        android:layout_toEndOf="@+id/projectnamelabel"
         android:textSize="@dimen/abc_text_size_medium_material"
-        android:layout_below="@+id/button" />
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,15 +108,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/meetingName"
-        android:layout_alignParentTop="true"
+        android:text="笔记标签："
+        android:id="@+id/projectnamelabel"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textIsSelectable="false"
+        android:focusableInTouchMode="true"
+        android:layout_above="@+id/editnote"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/meetingName"
         android:textColor="#ff000aff"
         android:textSize="@dimen/abc_text_size_title_material"
         android:textStyle="bold|italic"
-        android:maxWidth="@dimen/abc_action_bar_stacked_tab_max_width"
-        android:maxLines="1" />
+        android:maxWidth="@dimen/abc_search_view_text_min_width"
+        android:maxLines="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
 
 </RelativeLayout>
